@@ -1,5 +1,9 @@
 pipeline {
     agent {label 'slave'}
+    options {
+        buildDiscarder(logRotator(numToKeepStr: '5', artifactNumToKeepStr: '5'))
+        timestamps()
+    }
     environment {
         //TODO # 1 --> once you sign up for Docker hub, use that user_id here
         registry = "valikkr/public"
