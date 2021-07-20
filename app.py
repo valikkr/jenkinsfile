@@ -16,7 +16,7 @@ images = [
 #    "http://ak-hdl.buzzfed.com/static/2013-10/enhanced/webdr05/15/9/anigif_enhanced-buzz-26358-1381845043-13.gif",
 #    "http://ak-hdl.buzzfed.com/static/2013-10/enhanced/webdr06/15/9/anigif_enhanced-buzz-18774-1381844645-6.gif",
 #    "http://ak-hdl.buzzfed.com/static/2013-10/enhanced/webdr06/15/9/anigif_enhanced-buzz-25158-1381844793-0.gif",
-    "https://github.com/valikkr/jenkinsfile/blob/main/DevOps-FAQ.jpeg"
+    "https://github.com/valikkr/jenkinsfile/blob/main/devops-old-way.gif"
 ]
 
 @app.route('/')
