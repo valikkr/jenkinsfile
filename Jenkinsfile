@@ -2,9 +2,9 @@ pipeline {
     agent slave 
     environment {
         //TODO # 1 --> once you sign up for Docker hub, use that user_id here
-        registry = "ananthkannan/mypython-app-may20"
+        registry = "valikkr/public"
         //TODO #2 - update your credentials ID after creating credentials for connecting to Docker Hub
-        registryCredential = 'fa32f95a-2d3e-4c7b-8f34-11bcc0191d70'
+        registryCredential = 'dockerhub_id'
         dockerImage = ''
     }
     
