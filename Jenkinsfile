@@ -6,7 +6,7 @@ pipeline {
     }
     environment {
         //TODO # 1 --> once you sign up for Docker hub, use that user_id here
-        registry = "valikkr/public"
+        registry = "valikkr/public:${BUILD_NUMBER}"
         //TODO #2 - update your credentials ID after creating credentials for connecting to Docker Hub
         registryCredential = 'dockerhub_id'
         dockerImage = ''
@@ -24,7 +24,7 @@ pipeline {
     stage('Building image') {
       steps{
         script {
-            dockerImage = docker.build registry : BUILD_NUMBER 
+            dockerImage = docker.build registry
         }
       }
     }
