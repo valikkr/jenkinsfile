@@ -12,7 +12,7 @@ pipeline {
         stage('Cloning Git') {
             steps {
                 // make link via Pipeline Syntax
-                checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/valikkr/jenkinsfile.git']]])       
+                checkout([$class: 'GitSCM', branches: [[name: '*/*']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/valikkr/jenkinsfile.git']]])       
             }
         }
     
