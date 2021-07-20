@@ -1,5 +1,5 @@
 pipeline {
-    agent {lable}
+    agent {label 'slave'}
     environment {
         //TODO # 1 --> once you sign up for Docker hub, use that user_id here
         registry = "valikkr/public"
